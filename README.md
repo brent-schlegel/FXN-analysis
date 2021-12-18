@@ -1,5 +1,7 @@
 #Frataxin Analysis
 
+!All requisite code is found in the CS1640_final directory, GH wouldn't let me delete the other ones for some reason.
+
 This project was completed pursuant to the University of Pittsburgh CS1640 : Bioinformatics Software Design course, in conjunction with Dr. David R. Koes and members of his lab at Pitt. The primary goal was to quantify the molecular interactions of mutant complexes assosciated with the development and potential treatment of Friedriech's Ataxia, a metabolic disorder hindering the formation of iron-sulfur clusters in mitochondria. This was achieved through Molecular Dynamics simulation and visualization using PyMol, SLURM, pMEMD, Amber, CHARMm, and Anaconda, as well as statistical extrapolation and analysis with Python3, cpptraj, Jupyter Notebook, and MDAnalysis. Analysis focused on three distinct categories of molecular dynamics: Protein-protein contacts, protein-water contacts, and root mean-square fluctuation (RMSF). Ten simulations per 5 mutants (50 total) were ran on the Pitt School of Medicine's computational cluster, as an array of simulations organized with SLURM. Analysis was performed through remote access. 
 
 ##sim:
