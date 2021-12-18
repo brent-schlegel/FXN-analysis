@@ -8,16 +8,26 @@ This project was completed pursuant to the University of Pittsburgh CS1640 : Bio
 Main SLURM file used to run the simulations on the cluster. Jobs were ran simultaneously in an array. 
 
 ##waters, contacts, rmsfs:
-Statisical extrapolation of simulations, concatenation and scoring done with Python3 (pandas,numpy), 2-sided student's t-test assuming equal variance for each residue, performed between the wild type (unmutated) and mutant simulated data across 10 simulations. Significance values are added in a new column of the dataframe. Output in CSV format. 
+
+      *Statisical extrapolation of simulations, concatenation and scoring done with Python3 (pandas,numpy), 2-sided student's t-test assuming equal variance for each        residue, performed between the wild type (unmutated) and mutant simulated data across 10 simulations. 
+      *Significance values are added in a new column of the dataframe. 
+      *Output in CSV format. 
 
 ##final_distributions:
-Sample output of Jupyter visualizations including probability density, mean trend variance, difference btwn wild type & mutant, mapping of significant residues
+        
+      Sample output of Jupyter visualizations including probability density, mean trend variance, difference btwn wild type & mutant, mapping of significant residues
 
 ##compare:
-Generating the PDB format of the mutated complexes, by comparing the mutant and wild-type values for a specific residue, setting the B-factor for significant (p<0.005>) residues to the value of the difference of the wild-type and mutant. If not significant, B-factor values are 0. This allows for visualization using Py3Dmol and PyMol. 
+      
+      Generating the PDB format of the mutated complexes, by comparing the mutant and wild-type values for a specific residue, setting the B-factor for significant        (p<0.005>) residues to the value of the difference of the wild-type and mutant. 
+      If not significant, B-factor values are 0. This allows for visualization using Py3Dmol and PyMol. 
 
 ##jupyter_notebooks (ipynb):
-Statistical analysis and visualization of simulated data vs wild type, graphing with matplotlib. Graphs are color-coded for either significance or wt-mutant differentiation, according to the legends. Plots proceed in complexity for a given subset of data (waters, for example). Starting with probability density distributions and ultimately ending up in the analysis of significance. Complex 3D modelling performed with Py3Dmol
+
+      *Statistical analysis and visualization of simulated data vs wild type, graphing with matplotlib. 
+      *Graphs are color-coded for either significance or wt-mutant differentiation, according to the legends. 
+      *Plots proceed in complexity for a given subset of data (waters, for example). Starting with probability density distributions and ultimately ending up in the          analysis of significance. 
+      *Complex 3D modelling performed with Py3Dmol
 
     *Distributions: Primary statisitical analysis as described above
 
